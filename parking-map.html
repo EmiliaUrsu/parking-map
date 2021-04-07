@@ -1,0 +1,40 @@
+<script>
+    const PARKING_PLACES = 7
+    let freePlace = 3
+
+    let decor = ""
+    for (let x = 1 ; x <= PARKING_PLACES * 5; x++ ) {
+        decor += "#"
+    }
+    console.log(decor)
+
+    let places = ""
+    for (let x = 1; x <= PARKING_PLACES; x++) {
+        if(x == 3){
+            places += "|   |"
+        } else {
+            places += "| X |"
+        }
+    }
+    console.log(places)
+
+    decor = ""
+    for (let x = 1; x <= PARKING_PLACES * 5; x++) {
+        decor += "#"
+    }
+    console.log(decor)
+
+    // Raspunsuri :
+   // 1 : de ce a fost nevoie de variabilele decor si places ?
+   // Acestea au fost declarate pentru a li se atribui simbolurile, fiind utilizate doar in cadrul acestei secvente.
+
+   // 2 : de ce cele 2 variabile mentionate mai sus au fost declarate pana la cicluri?
+   //  Deoarece aceste variabile  " " curata totul ce a fost, altfel s-ar fi acumulat de fiecare data si 
+   //  s-ar fi inmultit toate starile " # ".
+
+   // 3 : ce inseamna const si de ce numele variabilei declarate prin acest prefix difera ca sintaxa de celelalte variabile?
+   //  Constanta nu poate fi modificata insa const defineste o referinta constanta la o valoare si putem schimba 
+   //  proprietatile obiectelor constante.
+
+</script>
+
